@@ -1,0 +1,212 @@
+<div class="container">
+  <header class="header">
+    <link href="styles.css" rel="stylesheet" />
+    <h1 id="title" class="text-center">Travel Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to participate in our survey.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Mode of Transportation</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value></option>
+        <option value="pose 1">Land</option>
+        <option value="pose 2">Air</option>
+	    <option value="pose 2">Land and Air</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Vaccination</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Fully Vaccinated</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />1st Dose</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not vaccinated</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Gender
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value></option>
+        <option value="Gender">Male</option>
+        <option value="Gender">Female</option>
+        <option value="Trangender">Trangender male</option>
+        <option value="Trangender">Trangender female</option>
+        <option value="none">I prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Covid-19 Screening
+        <span class="clue">(Symptoms)</span>
+      </p>
+
+      <label
+        ><input
+          name="need"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Cough</label
+      >
+      <label>
+        <input
+          name="need"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Headache</label
+      >
+      <label
+        ><input
+          name="need"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Shortness of Breath</label
+      >
+      <label
+        ><input
+          name="need"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Sore throat</label
+      >
+      <label
+        ><input
+          name="need"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Fever</label
+      >
+      <label
+        ><input
+          name="need"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Lose of Smell</label
+      >
+      <label
+        ><input
+          name="need"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Loss of taste </label
+      >
+      <label
+        ><input
+          name="need"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />Nausea/vommiting</label
+      >
+      <label
+        ><input
+          name="need"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Diarrhoea</label
+      >
+      <label
+        ><input
+          name="need"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Abdominal pain</label
+      >
+      <label
+        ><input
+          name="need"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Muscle ache</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any more issues that need to be addressed</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
